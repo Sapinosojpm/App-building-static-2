@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Resource Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <button class="close-btn" onclick="toggleSidebar()">×</button>
+      <a href="#home" onclick="toggleSidebar()">Home</a>
+      <a href="#introduction" onclick="toggleSidebar()">Introduction</a>
+      <a href="#featured" onclick="toggleSidebar()">Featured</a>
+      <a href="#categories-section" onclick="toggleSidebar()">Categories</a>
+      <a href="#resources" onclick="toggleSidebar()">Resources</a>
+      <a href="#about" onclick="toggleSidebar()">About</a>
+      <a href="#contact" onclick="toggleSidebar()">Contact</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid mx-5">
+        <a class="navbar-brand text-white fw-bolder" href="#">DevPhix</a>
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          onclick="toggleSidebar()"
+        >
+          ☰
+        </button>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#introduction">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#featured">Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categories-section">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resources">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-image-container">
+        <img
+          src="./img/close-up-image-programer-working-his-desk-office.jpg"
+          alt="Educational Hub"
+        />
+      </div>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Welcome to EduHub</h1>
+        <p>Your one-stop learning resource.</p>
+        <a href="#featured" class="btn">Explore Now</a>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="section bg-light">
+      <div class="container">
+        <div class="intro-content">
+          <h2 class="intro-title">Introduction to Web Development</h2>
+          <p class="intro-text">
+            Web development is a dynamic and ever-evolving field that involves
+            designing, building, and maintaining websites and web applications
+            using a combination of front-end technologies like HTML, CSS, and
+            JavaScript, as well as back-end technologies such as databases,
+            server-side scripting, and frameworks like Node.js, Django, or Ruby
+            on Rails. Developers create responsive, interactive, and
+            user-friendly digital experiences that power everything from simple
+            blogs to complex e-commerce platforms, social media networks, and
+            enterprise-level applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="featured" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Resources</h2>
+        <p class="section-description text-black">
+          Master the essential web technologies: HTML, CSS, JavaScript, React,
+          Laravel, and Python.
+        </p>
+
+        <div class="row">
+          <!-- HTML Card -->
+          <div class="col-md-4 my-2">
+            <div class="feature-card">
+              <div class="feature-image">
+                <img src="./img/HTML-Blog-Cover.png" alt="HTML Icon" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">HTML</h5>
+                <p class="card-text">
+                  Learn the foundation of web development with structured
+                  content using HTML.
+                </p>
+                <a href="#" class="modern-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSS Card -->
+          <div class="col-md-4 my-2">
+            <div class="feature-card">
+              <div class="feature-image">
+                <img src="./img/css.png" alt="CSS Icon" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">CSS</h5>
+                <p class="card-text">
+                  Style and design beautiful, responsive web pages with CSS.
+                </p>
+                <a href="#" class="modern-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript Card -->
+          <div class="col-md-4 my-2">
+            <div class="feature-card">
+              <div class="feature-image">
+                <img src="./img/javascript.png" alt="JavaScript Icon" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">JavaScript</h5>
+                <p class="card-text">
+                  Add interactivity and dynamic functionality to your websites
+                  with JavaScript.
+                </p>
+                <a href="#" class="modern-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- React Card -->
+          <div class="col-md-4 my-2">
+            <div class="feature-card">
+              <div class="feature-image">
+                <img src="./img/react.jpg" alt="React Icon" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">React</h5>
+                <p class="card-text">
+                  Build powerful, fast, and dynamic web applications using
+                  React.
+                </p>
+                <a href="#" class="modern-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Laravel Card -->
+          <div class="col-md-4 my-2">
+            <div class="feature-card">
+              <div class="feature-image">
+                <img src="./img/images.jpg" alt="Laravel Icon" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Laravel</h5>
+                <p class="card-text">
+                  Develop scalable web applications using Laravel, the PHP
+                  framework.
+                </p>
+                <a href="#" class="modern-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Card -->
+          <div class="col-md-4 my-2">
+            <div class="feature-card">
+              <div class="feature-image">
+                <img src="./img/poython.webp" alt="Python Icon" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Python</h5>
+                <p class="card-text">
+                  Learn Python programming for web development, AI, and data
+                  science.
+                </p>
+                <a href="#" class="modern-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories-section" class="section">
+      <div class="container">
+        <h2 class="section-title">Categories</h2>
+        <p class="section-description">
+          Explore various subjects like Web Development, Data Science, and more.
+        </p>
+
+        <div class="categories-grid">
+          <!-- Web Development Category -->
+          <div class="category-card">
+            <div class="category-icon">
+              <img src="./img/MERN Developer.eee18f2e.svg" alt="Web Dev Icon" />
+            </div>
+            <h3 class="category-title">Web Development</h3>
+            <p class="category-text">
+              Learn to build modern, responsive websites using HTML, CSS,
+              JavaScript, and frameworks like React and Node.js.
+            </p>
+          </div>
+
+          <!-- Data Science Category -->
+          <div class="category-card">
+            <div class="category-icon">
+              <img src="./img/datasc.jpg" alt="Data Science Icon" />
+            </div>
+            <h3 class="category-title">Data Science</h3>
+            <p class="category-text">
+              Analyze data, build machine learning models, and master Python,
+              SQL, and AI tools.
+            </p>
+          </div>
+
+          <!-- Cybersecurity Category -->
+          <div class="category-card">
+            <div class="category-icon">
+              <img
+                src="./img/cyber-security-flyer-square_23-2148658519.avif"
+                alt="Cybersecurity Icon"
+              />
+            </div>
+            <h3 class="category-title">Cybersecurity</h3>
+            <p class="category-text">
+              Learn ethical hacking, network security, and best practices to
+              protect digital assets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Web Development Resources Section -->
+    <section id="resources" class="section">
+      <div class="container">
+        <div class="resources-content">
+          <div class="resources-text">
+            <h2 class="section-title">Web Development Resources</h2>
+            <p class="section-description">
+              Gain access to high-quality materials to master web development.
+              Whether you're a beginner or an advanced learner, explore
+              tutorials, guides, and documentation.
+            </p>
+            <div class="resources-list">
+              <div class="resource-item">
+                <i class="fas fa-book-open"></i>
+                <span>Free Ebooks on HTML, CSS, JavaScript, and More</span>
+              </div>
+              <div class="resource-item">
+                <i class="fas fa-video"></i>
+                <span>Interactive Video Tutorials for Hands-on Learning</span>
+              </div>
+              <div class="resource-item">
+                <i class="fas fa-file-alt"></i>
+                <span
+                  >Research Papers and Documentation for Deeper Knowledge</span
+                >
+              </div>
+            </div>
+            <a href="#" class="modern-btn">Explore Resources</a>
+          </div>
+          <div class="resources-image">
+            <img
+              src="./img/web resources.jpg"
+              alt="Web Development Resources"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-image">
+            <img src="./img/about-devphix.png" alt="About DevPhix" />
+          </div>
+          <div class="about-text">
+            <h2 class="section-title">About DevPhix</h2>
+            <p class="section-description">
+              DevPhix is committed to equipping developers with the best tools
+              and knowledge to build cutting-edge web applications. Our platform
+              offers curated resources, tutorials, and expert insights to help
+              you master modern web development.
+            </p>
+            <div class="about-box">
+              <h3>Our Mission</h3>
+              <p>
+                To empower developers of all levels with high-quality learning
+                materials, bridging the gap between beginners and professionals
+                in the tech industry.
+              </p>
+            </div>
+            <a href="#" class="modern-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-description">
+          Have questions or need support? Reach out to us via email, phone, or
+          social media.
+        </p>
+
+        <div class="contact-content">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <p>
+              <i class="fas fa-envelope"></i> Email:
+              <a href="mailto:DevPhix@gmail.com">DevPhix@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone"></i> Phone: +123-456-7890</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Location: 123 Tech Street,
+              Dev City
+            </p>
+
+            <!-- Social Links -->
+            <div class="social-links">
+              <a href="#" class="social-btn"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-btn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="modern-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
